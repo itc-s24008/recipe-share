@@ -2,16 +2,13 @@ import { client } from "../../../lib/client";
 import { Recipe } from "../../../types/recipe";
 
 export default async function RecipeDetail({ params }: { params: Promise<{ id: string }> }) {
-  // Next.js 16 以降では params が Promise 扱いなので await が必要
   const { id } = await params;
 
-  // microCMS から該当レシピを取得
   const recipe: Recipe = await client.get({
     endpoint: "recipes",
     contentId: id,
   });
 
-  // 改行区切りで配列に変換
   const materialsArray: string[] = recipe.materials?.split("\n") || [];
   const stepsArray: string[] = recipe.steps?.split("\n") || [];
 
