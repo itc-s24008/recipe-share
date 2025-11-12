@@ -3,7 +3,6 @@ import styles from "./RecipeCard.module.css";
 import { Recipe } from "../types/recipe";
 
 export default function RecipeCard({ recipe }: { recipe: Recipe }) {
-  // materialsを配列に変換（改行で分割）
   const materialsArray = recipe.materials?.split("\n") || [];
 
   return (
