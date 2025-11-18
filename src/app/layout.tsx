@@ -22,7 +22,7 @@ export default function RootLayout({
             textAlign: "center",
           }}
         >
-          <h1>レシピ共有アプリ</h1>
+          <h1>レシピ共有サイト</h1>
         </header>
         <main>{children}</main>
       </body>
