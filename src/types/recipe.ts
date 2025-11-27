@@ -7,3 +7,4 @@ export type Recipe = {
     url: string;
   } | null;  
 };
+//TypeScriptの型定義してる

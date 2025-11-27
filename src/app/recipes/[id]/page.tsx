@@ -40,3 +40,5 @@ export default async function RecipeDetail({
     </article>
   );
 }
+
+//レシピの詳細ページを表示してる

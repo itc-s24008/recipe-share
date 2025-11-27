@@ -45,3 +45,4 @@ export default async function Home({ searchParams }: Props) {
     </section>
   );
 }
+//ホームページのレシピ一覧と検索機能を実装してる

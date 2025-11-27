@@ -30,3 +30,5 @@ export default function RecipeCard({ recipe }: { recipe: Recipe }) {
     </Link>
   );
 }
+
+//レシピカードのコンポーネントを定義してる

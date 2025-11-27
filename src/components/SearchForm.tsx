@@ -30,3 +30,5 @@ export default function SearchForm({ defaultValue = "" }: { defaultValue?: strin
     </form>
   );
 }
+
+//検索フォームのコンポーネントを定義してる
